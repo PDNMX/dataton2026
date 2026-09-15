@@ -252,12 +252,22 @@ section {
 }
 
 /* ---- CONTENT CARDS ---- */
+.cards-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards-row > [class*="col-"] {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
 .info-card {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(124, 58, 237, 0.12);
   border-radius: 16px;
   padding: 2rem;
-  margin-bottom: 1.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   transition: border-color 0.3s ease, transform 0.3s ease;
 }
 .info-card:hover {
@@ -297,8 +307,12 @@ section {
   background: #EDE8F2;
   border: 1px solid rgba(124, 58, 237, 0.15);
   border-radius: 16px;
-  padding: 2rem 1.5rem;
+  padding: 1.5rem;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
   transition: border-color 0.3s ease, transform 0.3s ease;
 }
 .sponsor-card:hover {
@@ -307,6 +321,10 @@ section {
 }
 .sponsor-card img {
   max-height: 72px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
   opacity: 0.9;
   transition: opacity 0.3s ease;
 }

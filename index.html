@@ -1,27 +1,260 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Próximamente</title>
-  <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #111;
-      color: #fff;
-      font-family: system-ui, sans-serif;
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO -->
+  <title>Datatón Anticorrupción 2026</title>
+  <meta name="description" content="El Datatón Anticorrupción 2026 es una iniciativa donde construiremos herramientas con el fin de combatir la corrupción en México.">
+  <meta name="author" content="Datatón Anticorrupción 2026">
+  <meta name="keywords" content="datatón, anticorrupción, hackathon, datos abiertos, México, SESNA, PDN, Plataforma Digital Nacional, corrupción">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dataton2026.plataformadigitalnacional.org/">
+  <meta property="og:title" content="Datatón Anticorrupción 2026">
+  <meta property="og:description" content="El Datatón Anticorrupción 2026 es una iniciativa donde construiremos herramientas con el fin de combatir la corrupción en México.">
+  <meta property="og:image" content="https://dataton2026.plataformadigitalnacional.org/img/card-2026.jpg">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="Datatón Anticorrupción 2026">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://dataton2026.plataformadigitalnacional.org/">
+  <meta name="twitter:title" content="Datatón Anticorrupción 2026">
+  <meta name="twitter:description" content="El Datatón Anticorrupción 2026 es una iniciativa donde construiremos herramientas con el fin de combatir la corrupción en México.">
+  <meta name="twitter:image" content="https://dataton2026.plataformadigitalnacional.org/img/card-2026.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Datatón Anticorrupción 2026",
+    "startDate": "2026-11-17T09:00-06:00",
+    "endDate": "2026-11-29T18:00-06:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "location": {
+      "@type": "VirtualLocation",
+      "url": "https://dataton2026.plataformadigitalnacional.org/"
+    },
+    "image": ["https://dataton2026.plataformadigitalnacional.org/img/card-2026.jpg"],
+    "description": "El Datatón Anticorrupción 2026 es una iniciativa donde construiremos herramientas con el fin de combatir la corrupción en México.",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://dataton2026.plataformadigitalnacional.org/",
+      "price": "0",
+      "priceCurrency": "MXN",
+      "availability": "https://schema.org/InStock"
+    },
+    "performer": {
+      "@type": "PerformingGroup",
+      "name": "SESNA"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Secretaría Ejecutiva del Sistema Nacional Anticorrupción",
+      "url": "https://www.gob.mx/sesna"
     }
-    h1 {
-      font-size: 3rem;
-      letter-spacing: 0.05em;
-    }
-  </style>
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="https://dataton2025.plataformadigitalnacional.org/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="https://dataton2025.plataformadigitalnacional.org/favicon.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Estilos compartidos -->
+  <link href="./css/styles.css" rel="stylesheet">
 </head>
-<body>
-  <h1>Próximamente</h1>
+
+<body id="page-top">
+
+  <!-- ======================== NAVBAR ======================== -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="./">
+        <span class="brand-icon">🔍</span>
+        Datatón Anticorrupción 2026
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
+              aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navigation">
+        <ul class="navbar-nav ms-auto align-items-center gap-1">
+          <li class="nav-item"><a class="nav-link" href="#info">Convocatoria</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Bases</a></li>
+          <li class="nav-item"><a class="nav-link" href="./dudas">Dudas</a></li>
+          <li class="nav-item">
+            <a class="nav-link btn-cta-nav" href="#">Participa</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======================== HERO ======================== -->
+  <header class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Próximamente — Convocatoria abierta
+      </div>
+      <h1>
+        <span class="gradient-text">Datatón</span><br>Anticorrupción
+      </h1>
+      <span class="year">2026</span>
+      <p class="lead">
+        Construiremos herramientas con el fin de
+        contribuir al combate a la corrupción en México.
+      </p>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <i class="fa-regular fa-calendar"></i>
+          <span>Noviembre 2026</span>
+        </div>
+        <div class="hero-meta-item">
+          <i class="fa-solid fa-laptop"></i>
+          <span>Formato Virtual</span>
+        </div>
+        <div class="hero-meta-item">
+          <i class="fa-solid fa-earth-americas"></i>
+          <span>Abierto a todo el mundo</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================== CONVOCATORIA ======================== -->
+  <section id="info">
+    <div class="container">
+      <h2 class="section-heading fade-in-section"><span class="gradient-text">Convocatoria</span></h2>
+      <div class="glow-line"></div>
+      <p class="section-subtitle fade-in-section">
+        La Secretaría Ejecutiva del Sistema Nacional Anticorrupción (SESNA) invita al público
+        en general interesado en temas de datos, tecnología y anticorrupción a participar.
+      </p>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="info-card fade-in-section">
+            <h4><i class="fa-solid fa-bullseye"></i> Objetivo</h4>
+            <p>Próximamente se publicarán los detalles del objetivo del Datatón Anticorrupción 2026.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="info-card fade-in-section">
+            <h4><i class="fa-solid fa-code"></i> Reto</h4>
+            <p>El reto público del Datatón 2026 se dará a conocer próximamente.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="info-card fade-in-section">
+            <h4><i class="fa-solid fa-database"></i> Datos</h4>
+            <p>Los conjuntos de datos disponibles para el evento se publicarán próximamente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== ORGANIZADORES ======================== -->
+  <section id="organizadores">
+    <div class="container">
+      <h2 class="section-heading fade-in-section">Una iniciativa de</h2>
+      <div class="glow-line"></div>
+      <div class="row justify-content-center g-4">
+        <div class="col-6 col-md-4 col-lg-3">
+          <a href="https://www.sna.org.mx/" target="_blank" rel="noopener" class="text-decoration-none">
+            <div class="sponsor-card fade-in-section">
+              <img src="./img/logos/logo-sna.svg" alt="Sistema Nacional Anticorrupción">
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3">
+          <a href="https://sesna.gob.mx" target="_blank" rel="noopener" class="text-decoration-none">
+            <div class="sponsor-card fade-in-section">
+              <img src="./img/logos/logo-sesna.svg" alt="SESNA">
+            </div>
+          </a>
+        </div>
+      </div>
+      <h3 class="section-heading fade-in-section" style="font-size:1.5rem; margin-top:3rem;">Organiza</h3>
+      <div class="glow-line"></div>
+      <div class="row justify-content-center">
+        <div class="col-8 col-md-5 col-lg-4">
+          <a href="https://www.plataformadigitalnacional.org/" target="_blank" rel="noopener" class="text-decoration-none">
+            <div class="sponsor-card fade-in-section">
+              <img src="./img/logos/logo-pdn.svg" alt="Plataforma Digital Nacional" style="max-height: 56px;">
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer>
+    <div class="container">
+      <div class="text-center footer-links mb-3">
+        <a href="https://www.plataformadigitalnacional.org/privacidad" target="_blank" rel="noopener">Aviso de privacidad</a>
+      </div>
+      <div class="d-flex justify-content-center gap-3 mb-4">
+        <a href="https://twitter.com/SESNAOficial" title="Twitter / X" class="social-link" target="_blank" rel="noopener">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/SESNAOficial" title="Facebook" class="social-link" target="_blank" rel="noopener">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="mailto:dataton@sesna.gob.mx" title="Correo electrónico" class="social-link">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 Datatón Anticorrupción. Secretaría Ejecutiva del Sistema Nacional Anticorrupción.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+  <!-- Scroll Reveal Animation -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+      document.querySelectorAll('.fade-in-section').forEach(el => observer.observe(el));
+
+      // Navbar background on scroll
+      const navbar = document.querySelector('.navbar');
+      window.addEventListener('scroll', () => {
+        navbar.style.background = window.scrollY > 50
+          ? 'rgba(8, 8, 16, 0.95)'
+          : 'rgba(8, 8, 16, 0.85)';
+      });
+    });
+  </script>
+
 </body>
 </html>

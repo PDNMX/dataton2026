@@ -72,6 +72,16 @@ a:hover { color: var(--primary-light); }
 .navbar-brand .brand-icon {
   font-size: 1.5rem;
 }
+.navbar-brand .brand-logo {
+  display: block;
+  height: 52px;
+  width: auto;
+  padding: 3px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 212, 255, 0.25);
+  box-shadow: 0 0 18px rgba(0, 212, 255, 0.2);
+}
 .navbar .nav-link {
   color: var(--text-muted) !important;
   font-weight: 500;
@@ -141,6 +151,21 @@ a:hover { color: var(--primary-light); }
   text-align: center;
   padding: 2rem;
   max-width: 900px;
+}
+
+/* Logo Datatón 2026 */
+.hero-logo {
+  display: block;
+  width: min(85vw, 62vh * 1.094, 540px);
+  height: auto;
+  margin: 0 auto 1.75rem;
+  padding: 0.6rem;
+  background: #fff;
+  border-radius: 28px;
+  border: 1px solid rgba(0, 212, 255, 0.25);
+  box-shadow: 0 0 60px rgba(0, 212, 255, 0.25), 0 0 120px rgba(233, 30, 140, 0.15);
+  opacity: 0;
+  animation: fadeInDown 0.8s ease 0.1s forwards;
 }
 
 /* Tag line */

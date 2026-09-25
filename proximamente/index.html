@@ -90,6 +90,30 @@
       max-width: 900px;
     }
 
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+    }
+
+    /* Logo Datatón 2026 */
+    .hero-logo {
+      display: block;
+      width: min(85vw, 62vh * 1.094, 540px);
+      height: auto;
+      margin: 0 auto 1.75rem;
+      padding: 0.6rem;
+      background: #fff;
+      border-radius: 28px;
+      border: 1px solid rgba(0, 212, 255, 0.25);
+      box-shadow: 0 0 60px rgba(0, 212, 255, 0.25), 0 0 120px rgba(233, 30, 140, 0.15);
+      opacity: 0;
+      animation: fadeInDown 0.8s ease 0.1s forwards;
+    }
+
     /* Tag line */
     .tagline {
       display: inline-flex;
@@ -295,6 +319,9 @@
 
     <!-- Main content -->
     <div class="content">
+      <img class="hero-logo" src="../img/logos/logo-dataton-2026.svg" alt="Logotipo Datatón Anticorrupción 2026, 8ª edición">
+
+      <!-- Texto oculto por ahora (el logo ya lo incluye); el h1 se conserva para SEO/accesibilidad
       <div class="tagline">
         <span class="line"></span>
         8ª Edición
@@ -306,6 +333,8 @@
         <span class="word-anti">Anticorrupción</span>
       </h1>
       <div class="year">2026</div>
+      -->
+      <h1 class="sr-only">Datatón Anticorrupción 2026</h1>
 
       <div class="neon-line"></div>
 

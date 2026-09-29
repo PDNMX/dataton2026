@@ -86,11 +86,7 @@
   <!-- ======================== NAVBAR ======================== -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="./">
-        <span class="brand-logo-box">
-          <img src="./img/logos/logo-dataton-2026.svg" alt="Datatón Anticorrupción 2026" class="brand-logo">
-        </span>
-      </a>
+      <a class="navbar-brand" href="./">Datatón 2026</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
               aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -100,9 +96,9 @@
           <li class="nav-item"><a class="nav-link" href="#info">Convocatoria</a></li>
           <li class="nav-item"><a class="nav-link" href="./bases/">Bases</a></li>
           <li class="nav-item"><a class="nav-link" href="./dudas">Dudas</a></li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link btn-cta-nav" href="#">Participa</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -115,24 +111,22 @@
 
     <!-- Main content -->
     <div class="content">
-      <div class="tagline">
-        <span class="line"></span>
-        8ª Edición
-        <span class="line"></span>
+      <!-- Decorative blobs for depth -->
+      <div class="hero-blobs">
+        <div class="blob blob-cyan"></div>
+        <div class="blob blob-magenta"></div>
       </div>
 
-      <h1 class="title">
-        <span class="word-dataton">Datatón</span><br>
-        <span class="word-anti">Anticorrupción</span>
-      </h1>
-      <div class="year">2026</div>
-
-      <div class="neon-line"></div>
-
-      <div class="badge-soon">
-        <span class="pulse-dot"></span>
-        Próximamente
+      <div class="hero-glass-card">
+        <img src="./img/logos/logo-dataton-hero.webp" alt="Datatón Anticorrupción 2026" class="hero-logo-img">
       </div>
+
+      <div class="badge-gradient">
+        <i class="fa-solid fa-calendar-check"></i>
+        Inauguración: 5 de octubre
+      </div>
+
+      <p class="hero-register-note">El registro se abrirá a partir de la inauguración</p>
     </div>
   </header>
 
@@ -171,7 +165,7 @@
 
       <div class="text-center mt-5 fade-in-section">
         <a href="./bases" class="btn btn-outline-neon px-4 py-3">
-          CONSULTA LAS BASES COMPLETAS <i class="fa-solid fa-arrow-right ms-2"></i>
+          CONSULTA LAS BASES <i class="fa-solid fa-arrow-right ms-2"></i>
         </a>
       </div>
     </div>
@@ -258,6 +252,8 @@
           ? 'rgba(5, 10, 20, 0.95)'
           : 'rgba(5, 10, 20, 0.88)';
       });
+
+
     });
   </script>
 

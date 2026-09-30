@@ -497,10 +497,9 @@ section {
   transform: translateY(-3px);
 }
 .sponsor-card img {
-  max-height: 72px;
+  height: 60px;
   max-width: 100%;
   width: auto;
-  height: auto;
   object-fit: contain;
   opacity: 0.9;
   transition: opacity 0.3s ease;

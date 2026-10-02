@@ -76,18 +76,152 @@
 
   <!-- ======================== CONTENIDO ======================== -->
   <section class="bg-surface">
-    <div class="container" style="max-width: 800px;">
-      <div class="info-card fade-in-section" style="text-align: center; padding: 3rem 2rem;">
-        <i class="fa-solid fa-clock" style="font-size: 2.5rem; color: var(--accent-amber); margin-bottom: 1rem; display: block;"></i>
-        <h4 style="color: var(--text); margin-bottom: 0.75rem;">Próximamente</h4>
-        <p style="margin-bottom: 1.5rem;">
-          La sección de preguntas frecuentes estará disponible próximamente.<br>
-          Mientras tanto, puedes escribirnos tus dudas directamente.
-        </p>
+    <div class="container" style="max-width: 860px;">
+
+      <div class="accordion fade-in-section" id="faqAccordion">
+
+        <!-- Pregunta 1 -->
+        <div class="accordion-item custom-accordion">
+          <h2 class="accordion-header" id="faq-heading-1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1" aria-expanded="false" aria-controls="faq-1">
+              <i class="fa-solid fa-users" style="color: var(--primary); margin-right: 0.75rem;"></i>
+              1. ¿Quiénes pueden participar?
+            </button>
+          </h2>
+          <div id="faq-1" class="accordion-collapse collapse" aria-labelledby="faq-heading-1" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              <p>El certamen es de alcance internacional y está abierto tanto al público en general interesado en tecnología, datos y anticorrupción, como a personas servidoras públicas y autoridades enfocadas en la prevención, detección, investigación y sanción de faltas administrativas o hechos de corrupción. Se contemplan dos categorías:</p>
+              <ul>
+                <li><strong>Categoría 1 (Público en general):</strong> Personas a título individual o en equipos que no laboren en un ente público.</li>
+                <li><strong>Categoría 2 (Personas servidoras públicas):</strong> Equipos conformados en su totalidad por personas servidoras públicas (preferentemente enfocadas al combate a la corrupción).</li>
+              </ul>
+              <p style="margin-top: 1rem;"><strong>Restricciones:</strong> No podrán participar servidores públicos que actualmente laboren en la SESNA, ni equipos que concursen simultáneamente con el mismo proyecto en otra dinámica o cuyos proyectos hayan sido premiados previamente.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="accordion-item custom-accordion">
+          <h2 class="accordion-header" id="faq-heading-2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2" aria-expanded="false" aria-controls="faq-2">
+              <i class="fa-solid fa-file-pen" style="color: var(--primary); margin-right: 0.75rem;"></i>
+              2. Somos varias personas que queremos participar, ¿todos deben llenar la solicitud?
+            </button>
+          </h2>
+          <div id="faq-2" class="accordion-collapse collapse" aria-labelledby="faq-heading-2" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              <p>Sí, cada uno debe llenar la solicitud de participación en el formulario correspondiente a más tardar el <strong>23 de octubre de 2026</strong> a las <strong>23:59 horas</strong> (tiempo del centro de México).</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="accordion-item custom-accordion">
+          <h2 class="accordion-header" id="faq-heading-3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-3" aria-expanded="false" aria-controls="faq-3">
+              <i class="fa-solid fa-people-group" style="color: var(--primary); margin-right: 0.75rem;"></i>
+              3. ¿Hay tamaño máximo de miembros por equipo?
+            </button>
+          </h2>
+          <div id="faq-3" class="accordion-collapse collapse" aria-labelledby="faq-heading-3" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              <p>Sí. Para ambas categorías, los equipos deben estar integrados por un <strong>máximo de cinco personas</strong>.</p>
+              <ul>
+                <li>Se sugiere que los equipos cuenten con perfiles multidisciplinarios.</li>
+                <li>Para ambas categorías es indispensable que al menos un integrante tenga disponibilidad para trasladarse a la Ciudad de México a la ceremonia de premiación en caso de resultar ganadores.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="accordion-item custom-accordion">
+          <h2 class="accordion-header" id="faq-heading-4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-4" aria-expanded="false" aria-controls="faq-4">
+              <i class="fa-solid fa-bullseye" style="color: var(--primary); margin-right: 0.75rem;"></i>
+              4. ¿Cuál es el reto del Datatón Anticorrupción 2026?
+            </button>
+          </h2>
+          <div id="faq-4" class="accordion-collapse collapse" aria-labelledby="faq-heading-4" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              <p>El reto principal del Datatón consiste en desarrollar propuestas creativas e innovadoras que contribuyan al fortalecimiento del <strong>Sistema de denuncias públicas de faltas administrativas y hechos de corrupción (S5)</strong> de la Plataforma Digital Nacional, tomando como punto de partida la versión de pruebas actualmente disponible.</p>
+              <p>Las propuestas deberán plantear soluciones digitales de código abierto orientadas a mejorar su funcionalidad, accesibilidad, confiabilidad y experiencia de uso para la ciudadanía, así como a identificar y atender áreas de oportunidad que contribuyan a su fortalecimiento.</p>
+              <p>De manera <strong>obligatoria</strong>, todas las propuestas deberán atender el eje de <strong>confidencialidad y anonimato</strong> durante todo el proceso de denuncia, mediante mecanismos que fortalezcan la protección de la identidad de las personas denunciantes en las etapas de recepción, trámite y seguimiento de las denuncias.</p>
+              <p>De manera adicional y no excluyente, las propuestas podrán incorporar uno o varios de los siguientes ejes:</p>
+              <ul>
+                <li>Accesibilidad e inclusión</li>
+                <li>Generación de datos abiertos y propuestas de visualización de información</li>
+                <li>Experiencia de usuario y trámite</li>
+              </ul>
+              <p>De manera adicional y no excluyente, las personas participantes podrán desarrollar propuestas de herramientas que permitan aprovechar, analizar y explotar los datos abiertos disponibles en la Plataforma Digital Nacional (PDN), con la finalidad de generar información útil para la prevención, detección y combate de la corrupción.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div class="accordion-item custom-accordion">
+          <h2 class="accordion-header" id="faq-heading-5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-5" aria-expanded="false" aria-controls="faq-5">
+              <i class="fa-solid fa-box-open" style="color: var(--primary); margin-right: 0.75rem;"></i>
+              5. ¿Qué tipo de entregables se esperan?
+            </button>
+          </h2>
+          <div id="faq-5" class="accordion-collapse collapse" aria-labelledby="faq-heading-5" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              <p>A más tardar el <strong>13 de noviembre de 2026</strong> a las <strong>23:59 horas</strong>, los equipos deberán enviar a través del formulario tres productos finales:</p>
+              <ol>
+                <li><strong>Presentación ejecutiva.</strong> Documento que describe de manera sintética la problemática abordada, la metodología empleada y la herramienta tecnológica desarrollada. Asimismo, la presentación deberá incluir evidencia de su funcionamiento, por ejemplo, mediante una demostración, capturas de pantalla o visualizaciones del tablero, sistema de alertas u otra solución desarrollada.</li>
+                <li><strong>Repositorio del código fuente</strong> utilizado para el desarrollo de la herramienta. Carpeta técnica que incluye los archivos necesarios para su consulta y, en su caso, reproducción.</li>
+                <li><strong>Documentación.</strong> Archivos que describen la metodología y tecnologías empleadas, que permitan que un tercero comprenda cómo se desarrolló la herramienta y cómo se replicaría.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pregunta 6 -->
+        <div class="accordion-item custom-accordion">
+          <h2 class="accordion-header" id="faq-heading-6">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-6" aria-expanded="false" aria-controls="faq-6">
+              <i class="fa-solid fa-chalkboard-user" style="color: var(--primary); margin-right: 0.75rem;"></i>
+              6. ¿Contaremos con el apoyo de asesores o mentores?
+            </button>
+          </h2>
+          <div id="faq-6" class="accordion-collapse collapse" aria-labelledby="faq-heading-6" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              <p>Sí, los participantes contarán con mentorías que se desarrollarán con especialistas en el ámbito técnico y normativo, las cuales se llevarán a cabo del <strong>3 al 12 de noviembre de 2026</strong>.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pregunta 7 -->
+        <div class="accordion-item custom-accordion">
+          <h2 class="accordion-header" id="faq-heading-7">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-7" aria-expanded="false" aria-controls="faq-7">
+              <i class="fa-solid fa-scale-balanced" style="color: var(--primary); margin-right: 0.75rem;"></i>
+              7. ¿De quién es la propiedad intelectual de los proyectos?
+            </button>
+          </h2>
+          <div id="faq-7" class="accordion-collapse collapse" aria-labelledby="faq-heading-7" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              <p>La propiedad intelectual de los proyectos y herramientas pertenece a sus creadores. Sin embargo, existen dos condiciones para participar y recibir reconocimientos:</p>
+              <ul>
+                <li>Aceptar aplicar la licencia abierta <strong>Creative Commons Atribución-NoComercial (CC BY-NC)</strong>, lo que permite que la ciudadanía e instituciones utilicen los desarrollos con fines no comerciales.</li>
+                <li>En caso de resultar ganadores, los equipos convienen en ceder los derechos de uso y modificación de las herramientas o prototipos desarrollados a la SESNA.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Contacto -->
+      <div class="fade-in-section" style="text-align: center; margin-top: 3rem;">
+        <p style="color: var(--text-muted); margin-bottom: 1rem;">¿Tienes otra duda? Escríbenos directamente:</p>
         <a href="mailto:dataton@sesna.gob.mx" style="display:inline-flex; align-items:center; gap:0.5rem; background:var(--gradient-primary); color:#fff; border:none; border-radius:10px; padding:0.75rem 2rem; font-weight:600; font-family:'Space Grotesk',sans-serif; text-decoration:none; transition:transform 0.2s ease, box-shadow 0.3s ease;">
           <i class="fa-solid fa-envelope"></i> dataton@sesna.gob.mx
         </a>
       </div>
+
     </div>
   </section>
 

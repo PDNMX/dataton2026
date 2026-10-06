@@ -479,6 +479,349 @@ section {
   border-bottom: 1px solid rgba(0, 212, 255, 0.08);
 }
 
+/* ---- CONFERENCIAS SECTION ---- */
+#conferencias {
+  background: var(--bg-surface);
+  border-top: 1px solid rgba(0, 212, 255, 0.08);
+  border-bottom: 1px solid rgba(0, 212, 255, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+#conferencias::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 500px 400px at 15% 30%, rgba(0, 212, 255, 0.04), transparent),
+    radial-gradient(ellipse 400px 350px at 85% 70%, rgba(233, 30, 140, 0.03), transparent);
+  pointer-events: none;
+}
+
+/* Timeline container */
+.conf-timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 2rem;
+}
+/* Vertical line */
+.conf-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--primary), var(--accent-violet) 50%, var(--accent-pink));
+  opacity: 0.4;
+  border-radius: 2px;
+}
+
+/* Conference card */
+.conf-card {
+  display: flex;
+  gap: 1.25rem;
+  position: relative;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(0, 212, 255, 0.1);
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.conf-card:hover {
+  border-color: rgba(0, 212, 255, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0, 212, 255, 0.08);
+}
+/* Timeline dot */
+.conf-card::before {
+  content: '';
+  position: absolute;
+  left: -2.35rem;
+  top: 1.8rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--primary);
+  box-shadow: 0 0 8px var(--primary), 0 0 16px rgba(0, 212, 255, 0.3);
+  z-index: 2;
+}
+
+/* Confirmed cards — glow border accent */
+.conf-confirmed {
+  border-color: rgba(0, 212, 255, 0.2);
+  background: rgba(0, 212, 255, 0.03);
+}
+.conf-confirmed::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: 17px;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.12), transparent 40%, rgba(233, 30, 140, 0.08));
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Upcoming cards — muted */
+.conf-upcoming {
+  opacity: 0.65;
+}
+.conf-upcoming:hover {
+  opacity: 0.85;
+}
+.conf-upcoming::before {
+  background: var(--accent-violet);
+  box-shadow: 0 0 6px var(--accent-violet);
+}
+
+/* Date badge */
+.conf-date-badge {
+  flex-shrink: 0;
+  width: 60px;
+  height: 68px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.12), rgba(123, 47, 190, 0.12));
+  border: 1px solid rgba(0, 212, 255, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+.conf-day {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.conf-month {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* Card body */
+.conf-body {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Meta row */
+.conf-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Tags */
+.conf-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: 0.04em;
+}
+.conf-tag-taller {
+  background: rgba(232, 168, 48, 0.12);
+  color: var(--accent-amber);
+  border: 1px solid rgba(232, 168, 48, 0.25);
+}
+.conf-tag-conferencia {
+  background: rgba(0, 212, 255, 0.08);
+  color: var(--primary-light);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+/* Time */
+.conf-time {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+/* Próximamente badge */
+.conf-badge-soon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: 0.06em;
+  color: var(--accent-pink-light);
+  background: rgba(233, 30, 140, 0.08);
+  border: 1px solid rgba(233, 30, 140, 0.2);
+  animation: confBadgePulse 2.5s ease-in-out infinite;
+}
+@keyframes confBadgePulse {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.55; }
+}
+
+/* Title */
+.conf-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+/* Description */
+.conf-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+/* YouTube button */
+.conf-actions {
+  margin-top: 0.25rem;
+}
+.btn-conf-youtube {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 1.1rem;
+  border-radius: 50px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #c4302b 0%, #ff0000 100%);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 12px rgba(255, 0, 0, 0.2);
+}
+.btn-conf-youtube:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(255, 0, 0, 0.35);
+  color: #fff;
+}
+.btn-conf-youtube-soon {
+  background: linear-gradient(135deg, rgba(196, 48, 43, 0.4), rgba(255, 0, 0, 0.4));
+  box-shadow: none;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+/* ---- Ponentes ---- */
+.conf-speakers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(0, 212, 255, 0.08);
+}
+.conf-speaker {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.conf-speaker-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #fff;
+  background: linear-gradient(135deg, var(--primary-deep), var(--accent-violet));
+  border: 2px solid rgba(0, 212, 255, 0.2);
+  overflow: hidden;
+  position: relative;
+}
+.conf-speaker-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+/* Color variants for visual distinction (up to 5) */
+.conf-speaker:nth-child(2) .conf-speaker-avatar { background: linear-gradient(135deg, var(--accent-pink), var(--accent-violet)); }
+.conf-speaker:nth-child(3) .conf-speaker-avatar { background: linear-gradient(135deg, var(--accent-cyan), var(--primary-deep)); }
+.conf-speaker:nth-child(4) .conf-speaker-avatar { background: linear-gradient(135deg, var(--accent-violet), var(--accent-pink)); }
+.conf-speaker:nth-child(5) .conf-speaker-avatar { background: linear-gradient(135deg, var(--accent-amber), var(--accent-pink)); }
+
+.conf-speaker-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.conf-speaker-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.conf-speaker-role {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.conf-speakers-tbd {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-style: italic;
+  padding: 0.25rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .conf-timeline {
+    padding-left: 1.5rem;
+  }
+  .conf-card {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.25rem;
+  }
+  .conf-date-badge {
+    width: 50px;
+    height: 56px;
+  }
+  .conf-day {
+    font-size: 1.25rem;
+  }
+  .conf-card::before {
+    left: -1.85rem;
+    top: 1.5rem;
+    width: 8px;
+    height: 8px;
+  }
+}
+
 /* ---- ORGANIZADORES / SPONSOR CARDS ---- */
 #organizadores {
   background: var(--bg-dark);

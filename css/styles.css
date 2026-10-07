@@ -538,7 +538,7 @@ section {
 .conf-card::before {
   content: '';
   position: absolute;
-  left: -2.35rem;
+  left: -2.3rem;
   top: 1.8rem;
   width: 10px;
   height: 10px;
@@ -815,7 +815,7 @@ section {
     font-size: 1.25rem;
   }
   .conf-card::before {
-    left: -1.85rem;
+    left: -1.7rem;
     top: 1.5rem;
     width: 8px;
     height: 8px;

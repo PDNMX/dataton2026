@@ -796,6 +796,30 @@ section {
   font-style: italic;
   padding: 0.25rem 0;
 }
+.conf-speakers-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 0.4rem;
+}
+.conf-speakers-label i {
+  color: var(--accent-cyan);
+  margin-right: 0.3rem;
+}
+.conf-speakers-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.conf-speakers-list li {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.3;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
